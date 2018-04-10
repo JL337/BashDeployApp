@@ -6,13 +6,17 @@ This demo will describe how to take a premade application, stage it from GitHub 
 
 Log into Azure portal and open the Azure Command Line Interface (CLI).
 
-###Set Parameters
+### Set Parameters
 
     `gitrepo=https://github.com/Azure-Samples/php-docs-hello-world`
     `webappname=demoApp01`
     `rg=appResourceGroup`
 
-###UsingAzure CLI
+To check the contents of a parameter use
+
+`echo <parameter>`
+
+### Using Azure Command Line Interface
 
 Open Azure CLI and create a new Resource Group:
 
