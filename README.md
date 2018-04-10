@@ -8,11 +8,11 @@ Log into Azure portal and open the Azure Command Line Interface (CLI).
 
 ### Set Parameters
 
-    `gitrepo=https://github.com/Azure-Samples/php-docs-hello-world`
-    `webappname=demoApp01`
-    `rg=appResourceGroup`
+    gitrepo=https://github.com/Azure-Samples/php-docs-hello-world
+    webappname=azureAppDemo100418
+    rg=appResourceGroup
 
-To check the contents of a parameter use
+To check the contents of a parameter use:
 
 `echo <parameter>`
 
@@ -33,24 +33,29 @@ Create the Web Application:
 `--plan $webappname`
 
 Create a deployment slot, eg: "staging":
+
 `az webapp deployment slot create --name $webappname --resource-group $rg \`
 
 `--slot staging`
 
 Deploy code to "Staging" slot from GitHub:
+
 `az webapp deployment source config --name $webappname --resource-group $rg \`
 
 `--slot staging --repo-url $gitrepo --branch master --manual-integration`
 
 In the CLI, use the below command then copy and paste the result into your local browser:
+
 `echo http://$webappname-staging.azurewebsites.net`
 
 Deploy the application to live production:
+
 `az webapp deployment slot swap --name $webappname --resource-group $rg \`
 
 `--slot staging`
 
 Again use the CLI, use the below command, to see the application live in production, paste the result into your local browser:
+
 `echo http://$webappname.azurewebsites.net`
 
 ### Removing Resource Group
