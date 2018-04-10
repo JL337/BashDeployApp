@@ -1,10 +1,10 @@
-# Stage and Deploy an Application on Azure
+# Stage and Deploy an Application to Azure
 
-This demo will describe how to take a premade application, stage it from GitHub and then deploy it live to Azure.
+This demo will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
 
 ## Azure
 
-Log into Azure portal and open the Azure Command Line Interface (CLI).
+Log into Azure portal with your credentials and open the Azure Command Line Interface (CLI).
 
 ### Set Parameters
 
@@ -14,16 +14,16 @@ Log into Azure portal and open the Azure Command Line Interface (CLI).
 
 To check the contents of a parameter use:
 
-    echo <parameter>
+    echo $<parameter>
 
-### Using Azure Command Line Interface
+### Managing the Application
 
 #### Getting Started
 Open Azure CLI and create a new Resource Group:
 
     az group create --location westeurope --name $rg
 
-Create an App Service Plan, S1 tier:
+Create an App Service Plan, S1 tier will be used:
 
     az appservice plan create --name $webappname --resource-group $rg --sku S1`
 
@@ -34,7 +34,7 @@ Create the Web Application:
 
 #### Deploying to Staging Environment
 
-Create a deployment slot, eg: "staging":
+Create a Deployment Slot, eg: "staging":
 
     az webapp deployment slot create --name $webappname --resource-group $rg \
     --slot staging`
