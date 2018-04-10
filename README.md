@@ -9,7 +9,9 @@ Log into Azure portal with your credentials and open the Azure Command Line Inte
 ### Set Parameters
 
     gitrepo=https://github.com/Azure-Samples/php-docs-hello-world
+
     webappname=azureAppDemo100418
+    
     rg=appResourceGroup
 
 To check the contents of a parameter use:
