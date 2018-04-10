@@ -32,7 +32,7 @@ Create an App Service Plan, S1 tier will be used:
 Create the Web Application:
 
     az webapp create --name $webappname --resource-group $rg \
-    --plan $webappname`
+    --plan $webappname
 
 #### Deploying to Staging Environment
 
