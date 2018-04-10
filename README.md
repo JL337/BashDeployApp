@@ -14,23 +14,22 @@ Log into Azure portal and open the Azure Command Line Interface (CLI).
 
 To check the contents of a parameter use:
 
-`echo <parameter>`
+    echo <parameter>
 
 ### Using Azure Command Line Interface
 
 Open Azure CLI and create a new Resource Group:
 
-`az group create --location westeurope --name $rg`
+    az group create --location westeurope --name $rg
 
 Create an App Service Plan, S1 tier:
 
-`az appservice plan create --name $webappname --resource-group $rg --sku S1`
+    az appservice plan create --name $webappname --resource-group $rg --sku S1`
 
 Create the Web Application:
 
-`az webapp create --name $webappname --resource-group $rg \`
-
-`--plan $webappname`
+    az webapp create --name $webappname --resource-group $rg \
+    --plan $webappname`
 
 Create a deployment slot, eg: "staging":
 
