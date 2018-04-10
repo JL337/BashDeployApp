@@ -18,6 +18,7 @@ To check the contents of a parameter use:
 
 ### Using Azure Command Line Interface
 
+#### Getting Started
 Open Azure CLI and create a new Resource Group:
 
     az group create --location westeurope --name $rg
@@ -31,25 +32,30 @@ Create the Web Application:
     az webapp create --name $webappname --resource-group $rg \
     --plan $webappname`
 
+#### Deploying to Staging Environment
+
 Create a deployment slot, eg: "staging":
 
     az webapp deployment slot create --name $webappname --resource-group $rg \
     --slot staging`
 
-Deploy code to "Staging" slot from GitHub:   
+Deploy code to "Staging" slot from GitHub:  
+
     az webapp deployment source config --name $webappname --resource-group $rg \
     --slot staging --repo-url $gitrepo --branch master --manual-integration`
 
-In the CLI, use the below command then copy and paste the result into your local browser:
+Use the below command then copy and paste the result into your local browser:
     
     echo http://$webappname-staging.azurewebsites.net`
+
+#### Deploying to Live Production
 
 Deploy the application to live production:
     
     az webapp deployment slot swap --name $webappname --resource-group $rg \`
     --slot staging
 
-Again use the CLI, use the below command, to see the application live in production, paste the result into your local browser:
+Use the below command, to see the application live in production, paste the result into your local browser:
     
     echo http://$webappname.azurewebsites.net
 
