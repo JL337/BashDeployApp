@@ -1,4 +1,4 @@
-# Stage and Deploy an Application to Azure
+# Stage and Deploy an Application using Azure
 
 This demo will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
 
@@ -11,7 +11,7 @@ Log into Azure portal with your credentials and open the Azure Command Line Inte
     gitrepo=https://github.com/Azure-Samples/php-docs-hello-world
 
     webappname=azureAppDemo100418
-    
+
     rg=appResourceGroup
 
 To check the contents of a parameter use:
@@ -27,7 +27,7 @@ Open Azure CLI and create a new Resource Group:
 
 Create an App Service Plan, S1 tier will be used:
 
-    az appservice plan create --name $webappname --resource-group $rg --sku S1`
+    az appservice plan create --name $webappname --resource-group $rg --sku S1
 
 Create the Web Application:
 
@@ -64,5 +64,6 @@ Use the below command, to see the application live in production, paste the resu
 ### Removing Resource Group
 
 To delete the resource group and remove all resources accociated with it:
+If parameter does not work, check the Resource Group Associated with your application.
     
     az group delete --name $rg
