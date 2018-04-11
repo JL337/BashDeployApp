@@ -3,18 +3,19 @@
 This demo will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
 The Cloud Shell (Bash) on the Azure portal will be used, however you can also use Bash with Azure CLI.
 
+## Managing your Application
+
+### Prerequisites
+
+Using Bash or CMD:
+
 [Install Latest Version of Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 Check Azure CLI has been downoaded successfully:
 
     Az
 
-
-## Managing your Application
-
-### Prerequisites
-
-Open up CMD and log in using your credentials:
+Log in using your credentials:
 
     az login
 
@@ -22,9 +23,25 @@ You may need to authenticate your device to log in, so follow the prompt if any.
 
 Enter the code that was displayed into your browser link, then choose your Microsoft account to be associated with Microsoft Azure Cross-platform Command Line Interface. Close the browser window after completed.
 
-#### Creating and allocating resources
-    
-Open Azure CLI and create a new Resource Group:
+Check on your console that you have linked your account successfully.
+
+### Set Parameters
+
+    gitrepo=https://github.com/Azure-Samples/php-docs-hello-world
+
+    webappname=azureAppDemo100418
+
+    rg=appResourceGroup
+
+To check the contents of a parameter use:
+
+    echo $<parameter>
+
+### Managing the Application
+
+#### Getting Started
+
+Create a new Resource Group:
 
     az group create --location westeurope --name $rg
 
