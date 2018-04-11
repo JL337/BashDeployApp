@@ -56,7 +56,7 @@ Create the Web Application:
     az webapp create --name $webappname --resource-group $rg \
     --plan $webappname
 
-#### Deploying to Staging Environment
+### Deploying to Staging Environment
 
 Create a Deployment Slot, eg: "staging":
 
@@ -72,7 +72,7 @@ Use the below command then copy and paste the result into your local browser:
     
     echo http://$webappname-staging.azurewebsites.net
 
-#### Deploying to Live Production
+### Deploying to Live Production
 
 Deploy the application to live production:
     
