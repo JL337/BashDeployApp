@@ -1,6 +1,7 @@
 # Stage and Deploy an Application using Azure
 
 This demo will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
+The Cloud Shell (Bash) on the Azure portal will be used, however you can also use Bash with Azure CLI.
 
 ## Azure
 
