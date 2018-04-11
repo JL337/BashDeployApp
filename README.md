@@ -25,6 +25,10 @@ Enter the code that was displayed into your browser link, then choose your Micro
 
 Check on your console that you have linked your account successfully.
 
+### Managing the Application
+
+#### Getting Started
+
 ### Set Parameters
 
     gitrepo=https://github.com/Azure-Samples/php-docs-hello-world
@@ -37,9 +41,7 @@ To check the contents of a parameter use:
 
     echo $<parameter>
 
-### Managing the Application
-
-#### Getting Started
+### Allocate resources and storage
 
 Create a new Resource Group:
 
