@@ -1,7 +1,7 @@
 # Stage and Deploy an Application using Azure Cloud Shell and Bash
 
-This demo will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
-The Cloud Shell (Bash) on the Azure portal will be used, however you can also use Bash with Azure CLI.
+This guide will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
+The Cloud Shell (Bash) on the Azure portal can be used, or locally with Bash using the Azure CLI.
 
 ## Managing your Application
 
@@ -13,7 +13,7 @@ Using Bash or CMD:
 
 Check Azure CLI has been downoaded successfully:
 
-    Az
+    az
 
 Log in using your credentials:
 
@@ -22,8 +22,6 @@ Log in using your credentials:
 You may need to authenticate your device to log in, so follow the prompt if any.
 
 Enter the code that was displayed into your browser link, then choose your Microsoft account to be associated with Microsoft Azure Cross-platform Command Line Interface. Close the browser window after completed.
-
-Check on your console that you have linked your account successfully.
 
 ## Managing the Application
 
