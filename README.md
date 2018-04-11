@@ -25,9 +25,9 @@ Enter the code that was displayed into your browser link, then choose your Micro
 
 Check on your console that you have linked your account successfully.
 
-### Managing the Application
+## Managing the Application
 
-#### Getting Started
+## Getting Started
 
 ### Set Parameters
 
