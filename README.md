@@ -7,11 +7,9 @@ The Cloud Shell (Bash) on the Azure portal can be used, or locally with Bash usi
 
 ### Prerequisites
 
-Using Bash or CMD:
-
 [Install Latest Version of Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-Check Azure CLI has been downoaded successfully:
+Check Azure CLI has been dowloaded successfully:
 
     az
 
