@@ -23,7 +23,7 @@ You may need to authenticate your device to log in, so follow the prompt if any.
 Enter the code that was displayed into your browser link, then choose your Microsoft account to be associated with Microsoft Azure Cross-platform Command Line Interface. Close the browser window after completed.
 
 #### Creating and allocating resources
-
+    
 Open Azure CLI and create a new Resource Group:
 
     az group create --location westeurope --name $rg
