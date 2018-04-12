@@ -17,6 +17,8 @@ Cloud Shell(Bash)
     az webapp create --name $webappname --resource-group $rg \
     --plan $webappname
 
+# Getting Started
+
 **This Demo will use Windows CMD to run az commands.**
 
 ## Managing your Application
@@ -38,8 +40,6 @@ You may need to authenticate your device to log in, so follow the prompt if any.
 Enter the code that was displayed into your browser link, then choose your Microsoft account to be associated with Microsoft Azure Cross-platform Command Line Interface. Close the browser window after completed.
 
 ## Managing the Application
-
-## Getting Started
 
 ### Set Parameters
 
