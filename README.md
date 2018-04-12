@@ -17,7 +17,7 @@ Cloud Shell(Bash)
     az webapp create --name $webappname --resource-group $rg \
     --plan $webappname
 
-This Demo will use Windows CMD to run az commands.
+**This Demo will use Windows CMD to run az commands.**
 
 ## Managing your Application
 
