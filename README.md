@@ -1,4 +1,4 @@
-# Stage and Deploy an Application using Azure CLI
+# Stage and Deploy an Application locally using CMD and Azure CLI
 
 This guide will describe how to take an application, stage it from GitHub and then deploy it live using Azure.
 The Azure Cloud Shell (Bash) can be used, or locally with CMD using the Azure CLI commands.
